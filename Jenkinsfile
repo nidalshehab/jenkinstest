@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
       // Without cloud, Jenkins will pick the first cloud in the list
-      cloud "test-cluster"
+      cloud "estydev-cluster-gke"
       label "jenkins-agent"
       yamlFile "jenkins-build-pod.yaml"
     }
